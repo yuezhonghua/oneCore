@@ -1,0 +1,68 @@
+
+ <div id="main" style="height:400px"></div>
+  <div id="main1" style="height:400px"></div>
+ <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('main')); 
+        
+        var option = {
+            tooltip: {
+                show: true
+            },
+            legend: {
+                data:['销量']
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data : gon.category
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    "name":"销量",
+                    "type":"bar",
+                    "data": gon.data
+                }
+            ]
+        };
+        // 为echarts对象加载数据 
+        myChart.setOption(option); 
+
+
+        var myChart1 = echarts.init(document.getElementById('main1')); 
+        
+        var option = {
+            tooltip: {
+                show: true
+            },
+            legend: {
+                data:['销量']
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data : gon.category
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    "name":"销量",
+                    "type":"bar",
+                    "data": gon.data
+                }
+            ]
+        };
+        // 为echarts对象加载数据 
+        myChart1.setOption(option); 
+</script>
