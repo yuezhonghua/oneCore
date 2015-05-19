@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  err_code: MyString
+  app_type: MyString
+  err_code: MyString
+  acq_ins: MyString
+  fwd_ins: MyString
+  err_num: 9.99
+
+two:
+  err_code: MyString
+  app_type: MyString
+  err_code: MyString
+  acq_ins: MyString
+  fwd_ins: MyString
+  err_num: 9.99

@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+
+//= require highcharts
+//= require bootstrap
+
+//= require echarts-all
+//= require jquery.ui.datepicker
+//= require jquery.ui.datepicker-zh-CN

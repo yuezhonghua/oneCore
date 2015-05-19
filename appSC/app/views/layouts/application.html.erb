@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AppSC</title>
+  <title>集中运维成熟度平台</title>
+  <%= include_gon %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class='container_fluid'>
+  <div class="col-md-1">
+  <div class="row">
+   
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><%=link_to  '主页',welcome_index_path%></li>
+        <li role="presentation"><%=link_to  '应用视角', welcome_app_index_path %></li>
+        <li role="presentation"><%=link_to  '通讯视角', welcome_com_index_path %></li>
+        <li role="presentation"><%=link_to  'ZNAP视角', welcome_znap_index_path %></li>
+        <li role="presentation"><%=link_to  '高可用视角', welcome_ha_index_path %></li>
+        <li role="presentation"><a href="#">管理</a></li>
+        <li role="presentation"><%=link_to  '配置', welcome_log_config_path %></li>
+  </div>
+</div>
+  <div class="col-md-11">
 
-<%= yield %>
+       <%= yield %>
 
+     </div>
 </body>
 </html>

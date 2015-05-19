@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+    
+    10.times do |i|
+      swt = Swt.create(daystr:'20150421',daynum:i)
+    end

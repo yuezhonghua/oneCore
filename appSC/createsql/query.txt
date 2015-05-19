@@ -1,0 +1,70 @@
+app��
+Ӧ��ҵ�񱨴�������
+select date,sum(err_num) from daily_err_num where app_type='APP' group by date
+
+Ӧ��ҵ�񱨴������ֲ�:
+select host_name,err_num from  daily_err_num where app_type='APP' and date='20150507' 
+
+Ӧ��ҵ�񱨴�ʱ���ֲ�:
+
+select hour,err_num from  daily_err_num_hour where app_type='APP' and date='20150507'
+
+Ӧ��ҵ�񱨴�ģ���ֲ�:
+select module,err_num from  daily_err_num_module where app_type='APP' and date='20150507'
+
+Ӧ��ҵ�񱨴������ֲ�:
+select err_code,err_num from  daily_err_code where app_type='APP' and date='20150507'
+
+Ӧ��ҵ�񱨴������ֲ�:
+select fwd_ins,err_num from daily_err_code_ins where app_type='APP' and date='20150507' 
+
+COM��
+ͨѶҵ�񱨴�������
+select date,sum(err_num) from daily_err_num where COM_type='COM' group by date
+
+ͨѶҵ�񱨴������ֲ�:
+select host_name,err_num from  daily_err_num where COM_type='COM' and date='20150507' 
+
+ͨѶҵ�񱨴�ʱ���ֲ�:
+
+select hour,err_num from  daily_err_num_hour where COM_type='COM' and date='20150507'
+
+ͨѶҵ�񱨴�ģ���ֲ�:
+select module,err_num from  daily_err_num_module where COM_type='COM' and date='20150507'
+
+ͨѶҵ�񱨴������ֲ�:
+select err_code,err_num from  daily_err_code where COM_type='COM' and date='20150507'
+
+HA��
+ת�Ӹ߿��ñ���������
+select date,sum(err_num) from daily_err_num where HA_type='HA' group by date
+
+ת�Ӹ߿��ñ��������ֲ�:
+select host_name,err_num from  daily_err_num where HA_type='HA' and date='20150507' 
+
+ת�Ӹ߿��ñ���ʱ���ֲ�:
+
+select hour,err_num from  daily_err_num_hour where HA_type='HA' and date='20150507'
+
+ת�Ӹ߿��ñ���ģ���ֲ�:
+select module,err_num from  daily_err_num_module where HA_type='HA' and date='20150507'
+
+ת�Ӹ߿��ñ��������ֲ�:
+select err_code,err_num from  daily_err_code where HA_type='HA' and date='20150507'
+
+ZNAP��
+ZNAP����������
+select date,sum(err_num) from daily_err_num where ZNAP_type='ZNAP' group by date
+
+ZNAP���������ֲ�:
+select host_name,err_num from  daily_err_num where ZNAP_type='ZNAP' and date='20150507' 
+
+ZNAP����ʱ���ֲ�:
+
+select hour,err_num from  daily_err_num_hour where ZNAP_type='ZNAP' and date='20150507'
+
+ZNAP����ģ���ֲ�:
+select module,err_num from  daily_err_num_module where ZNAP_type='ZNAP' and date='20150507'
+
+ZNAP���������ֲ�:
+select err_code,err_num from  daily_err_code where ZNAP_type='ZNAP' and date='20150507'

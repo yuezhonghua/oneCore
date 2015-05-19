@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datestr: MyString
+  app_type: MyString
+  hour: MyString
+  err_num: 9.99
+
+two:
+  datestr: MyString
+  app_type: MyString
+  hour: MyString
+  err_num: 9.99

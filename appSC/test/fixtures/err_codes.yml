@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  err_code: MyString
+  module_name: MyString
+  desc: MyString
+
+two:
+  err_code: MyString
+  module_name: MyString
+  desc: MyString

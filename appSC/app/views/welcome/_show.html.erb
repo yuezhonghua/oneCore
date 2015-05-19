@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-4">
+    <%= high_chart("total_chart", @total_chart) %>
+  </div>
+  <div class="col-md-4">
+    <%= high_chart("chart_err_code", @chart_err_code) %>
+  </div>
+  <div class="col-md-4">
+    <%= high_chart("chart_err_module", @chart_err_module) %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <%= high_chart("chart", @chart) %>
+  </div>
+  <div class="col-md-4">
+    <%= high_chart("chart_err_hour", @chart_err_hour) %>
+  </div>
+  <div class="col-md-4">
+    <%= high_chart("chart_err_fwd", @chart_err_fwd ) %>
+  </div>
+</div>
+
