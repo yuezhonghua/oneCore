@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>集中运维成熟度平台</title>
+  <%= include_gon %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='container_fluid'>
+  <div class="col-md-1">
+  <div class="row">
+   
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><%=link_to  '主页',welcome_index_path%></li>
+        <li role="presentation"><a href="#">指标</a></li>
+        <li role="presentation"><%=link_to  '事件','/event' %></li>
+        <li role="presentation"><a href="#">服务</a></li>
+        <li role="presentation"><a href="#">问题</a></li>
+        <li role="presentation"><a href="#">变更</a></li>
+        <li role="presentation"><a href="#">管理</a></li>
+        <li role="presentation"><a href="#">配置</a></li>
+  </div>
+</div>
+  <div class="col-md-11">
+
+       <%= yield %>
+
+     </div>
+</body>
+</html>
