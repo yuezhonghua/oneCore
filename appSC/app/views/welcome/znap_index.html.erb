@@ -1,1 +1,25 @@
+<script> 
+ $(function() {
+    $( "#find_start_time" ).datepicker();
+  });
+ $(function() {
+    $( "#find_end_time" ).datepicker();
+  });  
+  
+</script>
+<div class="row"> </div>
+<div class="row">
+   <div class="col-md-12">
+     <%= form_for :find ,url:{action:"znap_find" },remote: true do |f| %>
+    <div class="col-md-3">  起始日期: <%= f.text_field :start_time %><br /> </div>
+    <div class="col-md-3">  结束日期: <%= f.text_field :end_time %><br />   </div>
+    <div class="col-md-1">  </div>
+    <div class="col-md-3"> <%= f.submit "查询" %> </div>
+     <% end %>
+   </div> 
+</div>
+
+<div id='graph'>
 <%= render "show1" %>
+</div>
+

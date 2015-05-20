@@ -398,7 +398,7 @@ class WelcomeController < ApplicationController
 
     a = []
     b = []
-    modelview = DailyErrNumModule.find_by_sql ["select module,sum(err_num)  as err_num from daily_err_num_modules where trim(app_type) = ?  group by module",type]
+    modelview = DailyErrNumModule.find_by_sql ["select module,sum(err_num)  as err_num from daily_err_num_modules where trim(app_type) = ?  and dates>=? and dates<=? group by module",type,start_time,end_time]
     modelview.each do  |sw| 
       a << sw.module 
       b << sw.err_num 
@@ -435,7 +435,7 @@ class WelcomeController < ApplicationController
      end
   end
   
-   def findnotype(start_time,end_time)
+  def findnotype(start_time,end_time)
     
     a = []
     b = []
@@ -499,7 +499,7 @@ class WelcomeController < ApplicationController
 
     a = []
     b = []
-    modelview = DailyErrNumModule.find_by_sql ["select module,sum(err_num)  as err_num from daily_err_num_modules  group by module",start_time,end_time]
+    modelview = DailyErrNumModule.find_by_sql ["select module,sum(err_num)  as err_num from daily_err_num_modules where dates>=? and dates<=? group by module",start_time,end_time]
     modelview.each do  |sw| 
       a << sw.module 
       b << sw.err_num 
@@ -534,6 +534,7 @@ class WelcomeController < ApplicationController
       f.legend(:align => 'center', :verticalAlign => 'top', :y => 20, :x => -10, :layout => 'vertical',:margin => 0)
       f.chart({:defaultSeriesType=>"line"})
      end
+     
   end
   
 end
