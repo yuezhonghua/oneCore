@@ -1,0 +1,19 @@
+<div class="row">
+    <%= high_chart("sum_host_date_chart", @sum_host_date_chart) %>
+</div>
+<div class="row">
+ <%= high_chart("sum_err_code", @sum_err_code) %>
+</div>
+<div class="row">
+ <%= high_chart("chart_err_fwd10", @chart_err_fwd10) %>
+</div>
+<div class="row">
+<% @chart_set.each do |name,code_chart| %>
+    <%= high_chart(name,code_chart) %>
+<%end%>
+</div>
+<div class="row">
+<% @fwd10_chart_set.each do |name,code_chart| %>
+    <%= high_chart(name,code_chart) %>
+<%end%>
+</div>

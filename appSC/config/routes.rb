@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   
   get 'welcome/log_config' => 'welcome#log_config'
   
+  get 'welcome/sum_chart' => 'welcome#sum_chart'
+  
   post 'welcome/index_find' => 'welcome#index_find'
   
   post 'welcome/app_find' => 'welcome#app_find'
